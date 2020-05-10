@@ -1,0 +1,39 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-torquilmacleod-dev-101341-authRole",
+			"UnauthRoleArn": "arn:aws:iam::751318733141:role/amplify-torquilmacleod-dev-101341-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::751318733141:role/amplify-torquilmacleod-dev-101341-authRole",
+			"Region": "eu-west-2",
+			"DeploymentBucketName": "amplify-torquilmacleod-dev-101341-deployment",
+			"UnauthRoleName": "amplify-torquilmacleod-dev-101341-unauthRole",
+			"StackName": "amplify-torquilmacleod-dev-101341",
+			"StackId": "arn:aws:cloudformation:eu-west-2:751318733141:stack/amplify-torquilmacleod-dev-101341/5ab0bb50-9242-11ea-9eb3-0622cd7b28da",
+			"AmplifyAppId": "d2tdv36q5b106g"
+		}
+	},
+	"auth": {
+		"torquilmacleodcfbd51e4": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false,
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-torquilmacleod-dev-101341-deployment/amplify-cfn-templates/auth/torquilmacleodcfbd51e4-cloudformation-template.yml",
+				"logicalId": "authtorquilmacleodcfbd51e4"
+			},
+			"lastPushTimeStamp": "2020-05-10T00:59:46.254Z",
+			"output": {
+				"AppClientSecret": "1dunh26hn3cl50du4pfd6hu7537jr8i1aj2huqv6hhtuhe3d48p5",
+				"UserPoolId": "eu-west-2_p65uzYlaF",
+				"AppClientIDWeb": "sui2flnqca907vc559i04u5vs",
+				"AppClientID": "5ar1eg97kgsid0o4tvpb64vq4b",
+				"IdentityPoolId": "eu-west-2:5af26e76-0126-4a84-98cd-7ff1d6081aad",
+				"IdentityPoolName": "torquilmacleodcfbd51e4_identitypool_cfbd51e4__dev",
+				"UserPoolName": "torquilmacleodcfbd51e4_userpool_cfbd51e4"
+			},
+			"lastPushDirHash": "y7Rpn7wEOcly9soTKBXaB5b+93s="
+		}
+	},
+	"hosting": {}
+}
