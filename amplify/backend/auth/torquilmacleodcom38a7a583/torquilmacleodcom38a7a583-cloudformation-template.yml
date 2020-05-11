@@ -100,7 +100,7 @@ Resources:
   # Created to allow the UserPool SMS Config to publish via the Simple Notification Service during MFA Process
     Type: AWS::IAM::Role
     Properties:
-      RoleName: !If [ShouldNotCreateEnvResources, 'torquicfbd51e4_sns-role', !Join ['',[ 'sns', !Select [3, !Split ['-', !Ref 'AWS::StackName']], '-', !Ref env]]]
+      RoleName: !If [ShouldNotCreateEnvResources, 'torqui38a7a583_sns-role', !Join ['',[ 'sns', !Select [3, !Split ['-', !Ref 'AWS::StackName']], '-', !Ref env]]]
       AssumeRolePolicyDocument: 
         Version: "2012-10-17"
         Statement: 
@@ -112,10 +112,10 @@ Resources:
               - "sts:AssumeRole"
             Condition: 
               StringEquals:
-                sts:ExternalId: torquicfbd51e4_role_external_id
+                sts:ExternalId: torqui38a7a583_role_external_id
       Policies: 
         - 
-          PolicyName: torquicfbd51e4-sns-policy
+          PolicyName: torqui38a7a583-sns-policy
           PolicyDocument: 
             Version: "2012-10-17"
             Statement: 
@@ -161,7 +161,7 @@ Resources:
       SmsVerificationMessage: !Ref smsVerificationMessage
       SmsConfiguration: 
         SnsCallerArn: !GetAtt SNSRole.Arn
-        ExternalId: torquicfbd51e4_role_external_id
+        ExternalId: torqui38a7a583_role_external_id
     
   
   UserPoolClientWeb:
@@ -169,7 +169,7 @@ Resources:
   # Depends on UserPool for ID reference
     Type: "AWS::Cognito::UserPoolClient"
     Properties:
-      ClientName: torquicfbd51e4_app_clientWeb
+      ClientName: torqui38a7a583_app_clientWeb
       
       RefreshTokenValidity: !Ref userpoolClientRefreshTokenValidity
       UserPoolId: !Ref UserPool
@@ -179,7 +179,7 @@ Resources:
   # Depends on UserPool for ID reference
     Type: "AWS::Cognito::UserPoolClient"
     Properties:
-      ClientName: torquicfbd51e4_app_client
+      ClientName: torqui38a7a583_app_client
       
       GenerateSecret: !Ref userpoolClientGenerateSecret
       RefreshTokenValidity: !Ref userpoolClientRefreshTokenValidity
@@ -244,7 +244,7 @@ Resources:
   # Marked as depending on UserPoolClientRole for easier to understand CFN sequencing
     Type: 'AWS::IAM::Policy'
     Properties:
-      PolicyName: torquicfbd51e4_userpoolclient_lambda_iam_policy
+      PolicyName: torqui38a7a583_userpoolclient_lambda_iam_policy
       Roles: 
         - !Ref UserPoolClientRole
       PolicyDocument:
@@ -261,7 +261,7 @@ Resources:
   # Marked as depending on UserPoolClientLambdaPolicy for easier to understand CFN sequencing
     Type: 'AWS::IAM::Policy'
     Properties:
-      PolicyName: torquicfbd51e4_userpoolclient_lambda_log_policy
+      PolicyName: torqui38a7a583_userpoolclient_lambda_log_policy
       Roles: 
         - !Ref UserPoolClientRole
       PolicyDocument:
@@ -301,7 +301,7 @@ Resources:
   # Always created
     Type: AWS::Cognito::IdentityPool
     Properties: 
-      IdentityPoolName: !If [ShouldNotCreateEnvResources, 'torquilmacleodcfbd51e4_identitypool_cfbd51e4', !Join ['',['torquilmacleodcfbd51e4_identitypool_cfbd51e4', '__', !Ref env]]]
+      IdentityPoolName: !If [ShouldNotCreateEnvResources, 'torquilmacleodcom38a7a583_identitypool_38a7a583', !Join ['',['torquilmacleodcom38a7a583_identitypool_38a7a583', '__', !Ref env]]]
       
       CognitoIdentityProviders:
         - ClientId:  !Ref UserPoolClient

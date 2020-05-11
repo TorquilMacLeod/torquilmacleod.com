@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "torquilmacleodcfbd51e4_identitypool_cfbd51e4",
+    "identityPoolName": "torquilmacleodcom38a7a583_identitypool_38a7a583",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "torquicfbd51e4",
-    "userPoolName": "torquilmacleodcfbd51e4_userpool_cfbd51e4",
+    "resourceNameTruncated": "torqui38a7a583",
+    "userPoolName": "torquilmacleodcom38a7a583_userpool_38a7a583",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,9 +28,9 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "torquicfbd51e4_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "torqui38a7a583_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "resourceName": "torquilmacleodcfbd51e4",
+    "resourceName": "torquilmacleodcom38a7a583",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [

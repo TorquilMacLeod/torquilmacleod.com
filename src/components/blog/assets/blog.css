@@ -1,0 +1,48 @@
+
+.blogColumn {
+  margin: 4em auto;
+  width: 50%;
+}
+
+/* For web */
+@media only screen and (min-width:1080px) {
+  .blogColumn {
+    width: 780px;
+  }
+}
+
+/* For mobile phones */
+@media only screen and (max-width:620px) {
+  .blogColumn {
+    width: 480px;
+  }
+}
+
+.blogPost {
+  margin-top: 5em;
+}
+
+.blogColumn h1 {
+  font-family: 'Jaldi', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  margin: 0 0 1em;
+  color: #333333;
+  text-align: left;
+}
+
+.blogColumn h2 {
+  font-family: 'Jaldi', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin: 0.4em 0 0;
+  color: #333333;
+  text-align: left;
+}
+
+.blogColumn p {
+  font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
+  font-size: 1em;
+  text-align: justify;
+  margin: 0;
+}

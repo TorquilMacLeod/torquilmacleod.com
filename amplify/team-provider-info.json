@@ -1,19 +1,26 @@
 {
     "dev": {
         "awscloudformation": {
-            "AuthRoleName": "amplify-torquilmacleod-dev-101341-authRole",
-            "UnauthRoleArn": "arn:aws:iam::751318733141:role/amplify-torquilmacleod-dev-101341-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::751318733141:role/amplify-torquilmacleod-dev-101341-authRole",
+            "AuthRoleName": "amplify-torquilmacleodcom-dev-152248-authRole",
+            "UnauthRoleArn": "arn:aws:iam::751318733141:role/amplify-torquilmacleodcom-dev-152248-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::751318733141:role/amplify-torquilmacleodcom-dev-152248-authRole",
             "Region": "eu-west-2",
-            "DeploymentBucketName": "amplify-torquilmacleod-dev-101341-deployment",
-            "UnauthRoleName": "amplify-torquilmacleod-dev-101341-unauthRole",
-            "StackName": "amplify-torquilmacleod-dev-101341",
-            "StackId": "arn:aws:cloudformation:eu-west-2:751318733141:stack/amplify-torquilmacleod-dev-101341/5ab0bb50-9242-11ea-9eb3-0622cd7b28da",
-            "AmplifyAppId": "d2tdv36q5b106g"
+            "DeploymentBucketName": "amplify-torquilmacleodcom-dev-152248-deployment",
+            "UnauthRoleName": "amplify-torquilmacleodcom-dev-152248-unauthRole",
+            "StackName": "amplify-torquilmacleodcom-dev-152248",
+            "StackId": "arn:aws:cloudformation:eu-west-2:751318733141:stack/amplify-torquilmacleodcom-dev-152248/88f57660-926d-11ea-99bb-06af0f49b59c",
+            "AmplifyAppId": "d1a9ktovglm7y6"
         },
         "categories": {
             "auth": {
-                "torquilmacleodcfbd51e4": {}
+                "torquilmacleodcom94f408e8": {},
+                "torquilmacleodcom38a7a583": {}
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d1a9ktovglm7y6",
+                    "type": "cicd"
+                }
             }
         }
     }

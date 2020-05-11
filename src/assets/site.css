@@ -1,0 +1,95 @@
+@import "~normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+
+
+/* Set fluid typography sizing */
+
+/* Older browsers
+html { font-size: 16px; }
+
+@media screen and (min-width: 25em) {
+  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (1080 - 620) ); }
+}
+
+/* Safari <8 and IE <11 */
+/* @media screen and (min-width: 25em) {
+  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (1080 - 620) ); }
+}
+
+@media screen and (min-width: 50em) {
+  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (1080 - 620) ); }
+} */ */
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F5F5F5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  padding-left: calc(100vw - 100%);
+}
+
+.header {
+  text-align: center;
+  margin: 20px auto 0px auto;
+}
+
+.header h1 {
+  font-family: 'Jaldi', sans-serif;
+  font-weight: 700;
+  font-size: 5em;
+  color: #333333;
+  padding: 0;
+  margin: 0;
+}
+
+.header h2 {
+  font-family: 'Jaldi', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  color: #333333;
+  padding: 0;
+  margin: -16px 0 0 0;
+}
+
+.navbar {
+  text-align: center;
+  margin: 20px auto 0px auto;
+}
+
+.navbar a {
+  font-family: 'Jaldi', sans-serif;
+  font-weight: 400;
+  font-size: 1.6em;
+  color: #B3B3B3;
+  padding: 0;
+  margin: 0px 38px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* For mobile phones */
+@media only screen and (max-width:620px) {
+  .navbar a {
+    display: block;
+  }
+}
+
+.navbar > .activeLink {
+  color: #757575;
+}
+
+.navbar a:hover {
+  color: #757575;
+}
