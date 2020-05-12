@@ -1,25 +1,40 @@
 import React, { Component } from 'react';
+import {
+  Link
+} from "react-router-dom";
+
 import './assets/blog.css';
 
 class Blog extends Component {
   render() {
     return (
       <div className='blogColumn'>
-        <div className="blogPost">
-          <h1>Introducing AWS Elemental Media Event Management</h1>
-          <p>Today we announced the general availability of AWS Elemental Media Event Management (MEM), a support program designed to improve the operational reliability of your business-critical video events. MEM applies a structured process specifically designed for the unique operational requirements of large-scale video events that use AWS Media Services or AWS Elemental Appliances and Software, such as the broadcast of a marquee sports or the launch of a new online video service.</p>
-          <h2>Read More</h2>
-        </div>
-        <div className="blogPost">
-          <h1>Introducing AWS Elemental Media Event Management</h1>
-          <p>Today we announced the general availability of AWS Elemental Media Event Management (MEM), a support program designed to improve the operational reliability of your business-critical video events. MEM applies a structured process specifically designed for the unique operational requirements of large-scale video events that use AWS Media Services or AWS Elemental Appliances and Software, such as the broadcast of a marquee sports or the launch of a new online video service.</p>
-          <h2>Read More</h2>
-        </div>
-        <div className="blogPost">
-          <h1>Introducing AWS Elemental Media Event Management</h1>
-          <p>Today we announced the general availability of AWS Elemental Media Event Management (MEM), a support program designed to improve the operational reliability of your business-critical video events. MEM applies a structured process specifically designed for the unique operational requirements of large-scale video events that use AWS Media Services or AWS Elemental Appliances and Software, such as the broadcast of a marquee sports or the launch of a new online video service.</p>
-          <h2>Read More</h2>
-        </div>
+        <ul>
+          <li>
+            <div className="blogPostTitle">
+              <h1>All You Need To Know About Software</h1>
+              <h2>Posted on 12/05/2020 in <span className="postCategory">Software</span></h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis eros ante. Duis porta porttitor lorem. In hac habitasse platea dictumst. Proin accumsan, ligula blandit luctus vestibulum, dui diam consequat lacus, quis aliquet nisi orci sit amet ante. Mauris et velit elementum risus pellentesque aliquet eu eu sem. Pellentesque porta erat ut volutpat iaculis.</p>
+            <Link>Read More</Link>
+          </li>
+          <li>
+            <div className="blogPostTitle">
+              <h1>Why Is Everyone Talking About Web Design</h1>
+              <h2>Posted on 12/05/2020 in <span className="postCategory">Web Design</span></h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis eros ante. Duis porta porttitor lorem. In hac habitasse platea dictumst. Proin accumsan, ligula blandit luctus vestibulum, dui diam consequat lacus, quis aliquet nisi orci sit amet ante. Mauris et velit elementum risus pellentesque aliquet eu eu sem. Pellentesque porta erat ut volutpat iaculis.</p>
+            <Link>Read More</Link>
+          </li>
+          <li>
+            <div className="blogPostTitle">
+              <h1>The Hidden Agenda Of Cloud</h1>
+              <h2>Posted on 12/05/2020 in <span className="postCategory">Game Development</span></h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis eros ante. Duis porta porttitor lorem. In hac habitasse platea dictumst. Proin accumsan, ligula blandit luctus vestibulum, dui diam consequat lacus, quis aliquet nisi orci sit amet ante. Mauris et velit elementum risus pellentesque aliquet eu eu sem. Pellentesque porta erat ut volutpat iaculis.</p>
+            <Link>Read More</Link>
+          </li>
+        </ul>
       </div>
     )
   }

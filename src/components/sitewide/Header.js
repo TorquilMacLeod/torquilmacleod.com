@@ -9,16 +9,19 @@ class Header extends Component {
       <div>
         <div className="header">
           <h1>Torquil MacLeod</h1>
-          <h2>Software Engineer</h2>
         </div>
         <div className="navbar">
-          <NavLink activeClassName="activeLink" to="/blog">Blog</NavLink>
-          <NavLink activeClassName="activeLink" to="/portfolio">Portfolio</NavLink>
-          <NavLink activeClassName="activeLink" to="/contact">Contact</NavLink>
+          <NavLink isActive={testActive} activeClassName="activeLink" to="/">Blog</NavLink>
+          <NavLink isActive={testActive} activeClassName="activeLink" to="/portfolio">Portfolio</NavLink>
+          <NavLink isActive={testActive} activeClassName="activeLink" to="/contact">Contact</NavLink>
         </div>
       </div>
     )
   }
+}
+
+function testActive(match) {
+  return (match && match.isExact) || false;
 }
 
 export default Header;
