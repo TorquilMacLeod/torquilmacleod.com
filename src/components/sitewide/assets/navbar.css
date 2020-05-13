@@ -1,0 +1,34 @@
+.navbar {
+  text-align: center;
+  margin: 5em auto 0px auto;
+}
+
+.navbar a {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 2em;
+  letter-spacing: 0.2em;
+  color: #B3B3B3;
+  padding: 0;
+  margin: 0px 38px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* For mobile phones */
+@media only screen and (max-width:620px) {
+  .navbar a {
+    display: block;
+  }
+}
+
+.navbar > .activeLink {
+  text-decoration: none;
+  color: #3B5E24;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  color: #3B5E24;
+}

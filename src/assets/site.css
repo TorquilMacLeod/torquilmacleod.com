@@ -20,59 +20,31 @@ code {
   padding-left: calc(100vw - 100%);
 }
 
-.header {
-  text-align: center;
-  margin: 5em auto 3em;
+/* Arrow CSS shapes */
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
 }
 
-.header h1 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 700;
-  font-size: 4em;
-  line-height: 0.8em;
-  letter-spacing: 0.1em;
-  color: #3B5E24;
-  padding: 0;
-  margin: 0;
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
-.header h2 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 700;
-  font-size: 3em;
-  color: #333333;
-  padding: 0;
-  margin: 0;
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
 
-.navbar {
-  text-align: center;
-  margin: 5em auto 0px auto;
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
 }
 
-.navbar a {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-  font-size: 1.2em;
-  letter-spacing: 0.2em;
-  color: #B3B3B3;
-  padding: 0;
-  margin: 0px 38px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-/* For mobile phones */
-@media only screen and (max-width:620px) {
-  .navbar a {
-    display: block;
-  }
-}
-
-.navbar > .activeLink {
-  color: #3B5E24;
-}
-
-.navbar a:hover {
-  color: #3B5E24;
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
