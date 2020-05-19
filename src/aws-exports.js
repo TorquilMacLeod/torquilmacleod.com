@@ -3,11 +3,18 @@
 
 const awsmobile = {
     "aws_project_region": "eu-west-2",
-    "aws_cognito_identity_pool_id": "eu-west-2:5af26e76-0126-4a84-98cd-7ff1d6081aad",
+    "aws_cognito_identity_pool_id": "eu-west-2:7c7f42f8-839e-459e-b3bf-63366ffe32fe",
     "aws_cognito_region": "eu-west-2",
-    "aws_user_pools_id": "eu-west-2_p65uzYlaF",
-    "aws_user_pools_web_client_id": "sui2flnqca907vc559i04u5vs",
-    "oauth": {}
+    "aws_user_pools_id": "eu-west-2_TdqIlIhMB",
+    "aws_user_pools_web_client_id": "1g30jjge1pnbui5b9no7v6vkc8",
+    "oauth": {},
+    "aws_dynamodb_all_tables_region": "eu-west-2",
+    "aws_dynamodb_table_schemas": [
+        {
+            "tableName": "blogTable-dev",
+            "region": "eu-west-2"
+        }
+    ]
 };
 
 

@@ -1,0 +1,5 @@
+{
+    "tableName": "blogTable",
+    "partitionKeyName": "postId",
+    "partitionKeyType": "S"
+}

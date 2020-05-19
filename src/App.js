@@ -5,7 +5,7 @@ import {
   Route
 } from 'react-router-dom';
 
-import { Header, Blog, Portfolio, Contact } from './components';
+import { Header, Blog, Portfolio, Contact, BlogPost } from './components';
 
 function App() {
   return (
@@ -19,6 +19,9 @@ function App() {
           </Route>
           <Route exact path='/contact'>
             <Contact />
+          </Route>
+          <Route path='/blog/:slug'>
+            <BlogPost />
           </Route>
           <Route exact path='/'>
             <Blog />

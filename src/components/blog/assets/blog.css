@@ -58,7 +58,7 @@
   margin: 0 0 2em;
 }
 
-.blogColumn button {
+.blogColumn .readMoreLink {
   background-color: transparent;
   margin: 0.4em auto 0;
   padding: 0;
@@ -75,6 +75,6 @@
   text-transform: uppercase;
 }
 
-.blogColumn button:hover {
+.blogColumn .readMoreLink:hover {
   color: #3B5E24;
 }

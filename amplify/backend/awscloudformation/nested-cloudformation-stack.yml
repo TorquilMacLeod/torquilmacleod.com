@@ -115,6 +115,27 @@
 				}
 			}
 		},
+		"storageblogTable": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://s3.amazonaws.com/amplify-torquilmacleodcom-dev-152248-deployment/amplify-cfn-templates/storage/blogTable-cloudformation-template.json",
+				"Parameters": {
+					"tableName": "blogTable",
+					"partitionKeyName": "postId",
+					"partitionKeyType": "S",
+					"env": "dev"
+				}
+			}
+		},
+		"functionfetchBlogPosts": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://s3.amazonaws.com/amplify-torquilmacleodcom-dev-152248-deployment/amplify-cfn-templates/function/fetchBlogPosts-cloudformation-template.json",
+				"Parameters": {
+					"env": "dev"
+				}
+			}
+		},
 		"UpdateRolesWithIDPFunction": {
 			"DependsOn": [
 				"AuthRole",

@@ -1,45 +1,87 @@
 {
-    "providers": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-torquilmacleodcom-dev-152248-authRole",
-            "UnauthRoleArn": "arn:aws:iam::751318733141:role/amplify-torquilmacleodcom-dev-152248-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::751318733141:role/amplify-torquilmacleodcom-dev-152248-authRole",
-            "Region": "eu-west-2",
-            "DeploymentBucketName": "amplify-torquilmacleodcom-dev-152248-deployment",
-            "UnauthRoleName": "amplify-torquilmacleodcom-dev-152248-unauthRole",
-            "StackName": "amplify-torquilmacleodcom-dev-152248",
-            "StackId": "arn:aws:cloudformation:eu-west-2:751318733141:stack/amplify-torquilmacleodcom-dev-152248/88f57660-926d-11ea-99bb-06af0f49b59c",
-            "AmplifyAppId": "d1a9ktovglm7y6"
-        }
-    },
-    "auth": {
-        "torquilmacleodcom38a7a583": {
-            "service": "Cognito",
-            "providerPlugin": "awscloudformation",
-            "dependsOn": [],
-            "customAuth": false,
-            "providerMetadata": {
-                "s3TemplateURL": "https://s3.amazonaws.com/amplify-torquilmacleodcom-dev-152248-deployment/amplify-cfn-templates/auth/torquilmacleodcom38a7a583-cloudformation-template.yml",
-                "logicalId": "authtorquilmacleodcom38a7a583"
-            },
-            "lastPushTimeStamp": "2020-05-10T03:31:45.352Z",
-            "output": {
-                "AppClientSecret": "lobieum83hr2cn4c17i9d4losjqccusl7u9ij9jjtr38hkvrckq",
-                "UserPoolId": "eu-west-2_TdqIlIhMB",
-                "AppClientIDWeb": "1g30jjge1pnbui5b9no7v6vkc8",
-                "AppClientID": "2f3bug73g3ijgoe3iqip4hpab4",
-                "IdentityPoolId": "eu-west-2:7c7f42f8-839e-459e-b3bf-63366ffe32fe",
-                "IdentityPoolName": "torquilmacleodcom38a7a583_identitypool_38a7a583__dev",
-                "UserPoolName": "torquilmacleodcom38a7a583_userpool_38a7a583"
-            },
-            "lastPushDirHash": "AeQbnfsAoQNHuRfIv6z4n8isucw="
-        }
-    },
-    "hosting": {
-        "amplifyhosting": {
-            "service": "amplifyhosting",
-            "type": "cicd",
-            "lastPushTimeStamp": "2020-05-10T03:40:04.644Z"
-        }
-    }
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-torquilmacleodcom-dev-152248-authRole",
+			"UnauthRoleArn": "arn:aws:iam::751318733141:role/amplify-torquilmacleodcom-dev-152248-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::751318733141:role/amplify-torquilmacleodcom-dev-152248-authRole",
+			"Region": "eu-west-2",
+			"DeploymentBucketName": "amplify-torquilmacleodcom-dev-152248-deployment",
+			"UnauthRoleName": "amplify-torquilmacleodcom-dev-152248-unauthRole",
+			"StackName": "amplify-torquilmacleodcom-dev-152248",
+			"StackId": "arn:aws:cloudformation:eu-west-2:751318733141:stack/amplify-torquilmacleodcom-dev-152248/88f57660-926d-11ea-99bb-06af0f49b59c",
+			"AmplifyAppId": "d1a9ktovglm7y6"
+		}
+	},
+	"auth": {
+		"torquilmacleodcom38a7a583": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false,
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-torquilmacleodcom-dev-152248-deployment/amplify-cfn-templates/auth/torquilmacleodcom38a7a583-cloudformation-template.yml",
+				"logicalId": "authtorquilmacleodcom38a7a583"
+			},
+			"lastPushTimeStamp": "2020-05-19T01:49:40.745Z",
+			"output": {
+				"AppClientSecret": "lobieum83hr2cn4c17i9d4losjqccusl7u9ij9jjtr38hkvrckq",
+				"UserPoolId": "eu-west-2_TdqIlIhMB",
+				"AppClientIDWeb": "1g30jjge1pnbui5b9no7v6vkc8",
+				"AppClientID": "2f3bug73g3ijgoe3iqip4hpab4",
+				"IdentityPoolId": "eu-west-2:7c7f42f8-839e-459e-b3bf-63366ffe32fe",
+				"IdentityPoolName": "torquilmacleodcom38a7a583_identitypool_38a7a583__dev",
+				"UserPoolName": "torquilmacleodcom38a7a583_userpool_38a7a583"
+			},
+			"lastPushDirHash": "AeQbnfsAoQNHuRfIv6z4n8isucw="
+		}
+	},
+	"hosting": {
+		"amplifyhosting": {
+			"service": "amplifyhosting",
+			"type": "cicd",
+			"lastPushTimeStamp": "2020-05-10T03:40:04.644Z"
+		}
+	},
+	"storage": {
+		"blogTable": {
+			"service": "DynamoDB",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-torquilmacleodcom-dev-152248-deployment/amplify-cfn-templates/storage/blogTable-cloudformation-template.json",
+				"logicalId": "storageblogTable"
+			},
+			"lastPushTimeStamp": "2020-05-19T01:49:40.753Z",
+			"output": {
+				"PartitionKeyName": "postId",
+				"Region": "eu-west-2",
+				"Arn": "arn:aws:dynamodb:eu-west-2:751318733141:table/blogTable-dev",
+				"StreamArn": "arn:aws:dynamodb:eu-west-2:751318733141:table/blogTable-dev/stream/2020-05-19T01:48:44.398",
+				"PartitionKeyType": "S",
+				"Name": "blogTable-dev"
+			},
+			"lastPushDirHash": "zBikT2vZffcAAFDjoTRW/2pjuIc="
+		}
+	},
+	"function": {
+		"fetchBlogPosts": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"lastBuildTimeStamp": "2020-05-19T01:48:27.820Z",
+			"lastPackageTimeStamp": "2020-05-19T01:48:27.853Z",
+			"distZipFilename": "fetchBlogPosts-46576a792b3176424854-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-torquilmacleodcom-dev-152248-deployment/amplify-cfn-templates/function/fetchBlogPosts-cloudformation-template.json",
+				"logicalId": "functionfetchBlogPosts"
+			},
+			"lastPushTimeStamp": "2020-05-19T01:49:40.753Z",
+			"output": {
+				"Region": "eu-west-2",
+				"Arn": "arn:aws:lambda:eu-west-2:751318733141:function:fetchBlogPosts-dev",
+				"Name": "fetchBlogPosts-dev",
+				"LambdaExecutionRole": "torquilmacleodcomLambdaRole83f28f95-dev"
+			},
+			"lastPushDirHash": "MQ2T2M8xRNS0MY7U2alV2lYaYdM="
+		}
+	}
 }
