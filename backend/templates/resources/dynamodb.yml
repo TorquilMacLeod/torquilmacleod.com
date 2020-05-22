@@ -1,0 +1,26 @@
+Resources:
+  BlogTable:
+    Type: 'AWS::DynamoDB::Table'
+    Properties:
+      TableName: BlogTable
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: postId
+          AttributeType: S
+        - AttributeName: tag
+          AttributeType: S
+        - AttributeName: date
+          AttributeType: S
+      KeySchema:
+        - AttributeName: postId
+          KeyType: HASH
+      GlobalSecondaryIndexes:
+        - IndexName: tag-index
+          KeySchema:
+            - AttributeName: tag
+              KeyType: HASH
+            - AttributeName: date
+              KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+          

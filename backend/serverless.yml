@@ -1,0 +1,34 @@
+service: site-backend
+
+plugins:
+- serverless-iam-roles-per-function
+- serverless-webpack
+
+custom:
+  webpack:
+    includeModules: true
+    packager: npm
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: eu-west-2
+
+# you can define service wide environment variables here
+#  environment:
+#    variable1: value1
+
+functions:
+  fetchBlogPosts:
+    handler: functions/blog/fetchBlogPosts.handler
+    iamRoleStatements: ${file(templates/roles/fetchBlogPostsRole.yml)}
+    events:
+      - http:
+          path: blog
+          method: get
+    # environment:
+    #   variable2: value2
+
+resources:
+  - ${file(templates/resources/dynamodb.yml)}

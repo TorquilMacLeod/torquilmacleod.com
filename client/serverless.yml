@@ -1,0 +1,16 @@
+service: site-frontend
+
+plugins:
+  - serverless-finch
+
+provider:
+  name: aws
+  stage: dev
+  region: eu-west-2
+
+custom:
+  client:
+    bucketName: torquilmacleod.com
+    distributionFolder: build
+    indexDocument: index.html
+    errorDocument: index.html

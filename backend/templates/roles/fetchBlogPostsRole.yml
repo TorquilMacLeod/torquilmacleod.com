@@ -1,0 +1,3 @@
+- Effect: "Allow"
+  Action: dynamodb:Get*
+  Resource: !GetAtt BlogTable.Arn
